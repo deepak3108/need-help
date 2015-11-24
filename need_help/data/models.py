@@ -7,5 +7,5 @@ class Donor(models.Model):
 	city_name = models.CharField(max_length = 20)
 	mobile_number = models.BigIntegerField()
 	password = models.CharField(max_length = 20)
-
-	
+	def __unicode__(self):              
+		return self.donar_name 
